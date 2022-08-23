@@ -1,1 +1,2 @@
-# cursos-udemy-patrones-js-ts
+# Curso Udemy 
+# Patrones de Diseño en JavaScript y TypeScript
