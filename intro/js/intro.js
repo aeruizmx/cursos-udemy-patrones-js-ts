@@ -39,3 +39,10 @@ console.log(names)
 //map
 const namesUpper = names.map((name) => name.toUpperCase());
 console.log(namesUpper)
+
+// reduce, para acumulados
+const numbers = [5,4,4,10];
+const total = numbers.reduce((ac, number) =>{
+  return ac + (number*2);
+}, 0)
+console.log(total)
