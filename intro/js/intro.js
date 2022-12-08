@@ -24,3 +24,14 @@ operation((a,b) => {
   const c = a + b
   return c * 2
 }, 4,5);
+
+// foreach
+const names = ['Andres','José','Francisco'];
+// Metodo inmutable, no modifica elemento original
+names.forEach((name) =>console.log(name));
+names.forEach((name) =>console.log(name.toUpperCase()));
+
+console.log(names)
+// Metodo mutable, modifica el elemento original
+names.sort();
+console.log(names)
