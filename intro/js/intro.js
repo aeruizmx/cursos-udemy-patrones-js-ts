@@ -35,3 +35,7 @@ console.log(names)
 // Metodo mutable, modifica el elemento original
 names.sort();
 console.log(names)
+
+//map
+const namesUpper = names.map((name) => name.toUpperCase());
+console.log(namesUpper)
