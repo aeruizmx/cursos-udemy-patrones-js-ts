@@ -46,3 +46,26 @@ const total = numbers.reduce((ac, number) =>{
   return ac + (number*2);
 }, 0)
 console.log(total)
+
+// Clase
+class Drink {
+
+  constructor(name){
+    this.name = name;
+  }
+  info(){
+    return "la bebida es: "+ this.name;
+  }
+}
+//funcional
+function Drink2(name){
+  this.name = name;
+  this.info() = function(){
+    return "la bebida es: "+ this.name;
+  }
+}
+const drink = new Drink('agua');
+console.log(drink.name)
+
+const drink2 = new Drink2("agua");
+console.log(drink2.info)
