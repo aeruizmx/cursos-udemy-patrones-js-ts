@@ -60,7 +60,7 @@ class Drink {
 //funcional
 function Drink2(name){
   this.name = name;
-  this.info() = function(){
+  this.info = function(){
     return "la bebida es: "+ this.name;
   }
 }
@@ -69,3 +69,16 @@ console.log(drink.name)
 
 const drink2 = new Drink2("agua");
 console.log(drink2.info)
+
+// Herencia
+class Beer extends Drink{
+  constructor(name, alcohol){
+    super(name);
+    this.alcohol = alcohol;
+  }
+  info(){
+    return super.info() + " " + this.alcohol;
+  }
+}
+const beer = new Beer('corona',4.5);
+console.log(beer.info());
